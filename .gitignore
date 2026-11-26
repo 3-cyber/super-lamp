@@ -1,0 +1,7 @@
+dist/
+dist-installer/
+build/
+__pycache__/
+*.spec
+.vscode/
+logs/*.log
