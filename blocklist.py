@@ -52,7 +52,7 @@ CORE_ADULT_DOMAINS = [
     "hentaimanga.me", "submanga.io", "cartoonpornvideos.com", "animeporn.tv", "hentaicloud.com",
 
     # NSFW AI & Adult Generator Sites
-    "civitai.red", "civitai.com", "pornpen.ai", "seduced.ai", "unprompt.ai", "sexy.ai",
+    "pornpen.ai", "seduced.ai", "unprompt.ai", "sexy.ai",
 
     # VR Porn
     "wankzvr.com", "sexlikereal.com", "vrsmash.com", "badoinkvr.com", "virtualrealporn.com",
@@ -129,8 +129,7 @@ ADULT_KEYWORDS = [
     # Hentai / Doujinshi / Anime / AI Adult Keywords
     r"\bhentai\b", r"\bdoujin\b", r"\bdoujinshi\b", r"\becchi\b", r"\bahegao\b",
     r"\bhanime\b", r"\bnhentai\b", r"\brule34\b", r"\bgelbooru\b", r"\bfakku\b",
-    r"\bhentaidude\b", r"\basmhentai\b", r"\bhentaifox\b", r"\bhentaimama\b",
-    r"\bcivitai\b"
+    r"\bhentaidude\b", r"\basmhentai\b", r"\bhentaifox\b", r"\bhentaimama\b"
 ]
 
 ONLINE_BLOCKLIST_SOURCES = [

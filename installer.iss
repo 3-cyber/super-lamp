@@ -2,34 +2,34 @@
 ; Automatically generated for Community Release
 
 [Setup]
-AppName=Website Blocker
+AppName=Ultimate Porn Blocker
 AppVersion=1.0.0
-AppPublisher=Community Shield
-DefaultDirName={autopf}\WebsiteBlocker
-DefaultGroupName=Website Blocker
-UninstallDisplayIcon={app}\WebsiteBlocker.exe
+AppPublisher=Ultimate Shield Community
+DefaultDirName={autopf}\UltimatePornBlocker
+DefaultGroupName=Ultimate Porn Blocker
+UninstallDisplayIcon={app}\UltimatePornBlocker.exe
 Compression=lzma2/ultra64
 SolidCompression=yes
 OutputDir=..\dist-installer
-OutputBaseFilename=WebsiteBlocker-Setup
+OutputBaseFilename=UltimatePornBlocker-Setup
 PrivilegesRequired=admin
 DisableWelcomePage=no
 
 [Files]
-Source: "dist\WebsiteBlocker\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "dist\UltimatePornBlocker\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
-Name: "{group}\Website Blocker"; Filename: "{app}\WebsiteBlocker.exe"
-Name: "{group}\Uninstall Website Blocker"; Filename: "{uninstallexe}"
-Name: "{autodesktop}\Website Blocker"; Filename: "{app}\WebsiteBlocker.exe"
+Name: "{group}\Ultimate Porn Blocker"; Filename: "{app}\UltimatePornBlocker.exe"
+Name: "{group}\Uninstall Ultimate Porn Blocker"; Filename: "{uninstallexe}"
+Name: "{autodesktop}\Ultimate Porn Blocker"; Filename: "{app}\UltimatePornBlocker.exe"
 
 [Run]
 ; 1. Configure the user-chosen Master Password silently
-Filename: "{app}\WebsiteBlocker.exe"; Parameters: "--set-init-password ""{code:GetMasterPassword}"""; Flags: runhidden
+Filename: "{app}\UltimatePornBlocker.exe"; Parameters: "--set-init-password ""{code:GetMasterPassword}"""; Flags: runhidden
 ; 2. Start the background protection daemon immediately
-Filename: "{app}\WebsiteBlocker.exe"; Parameters: "--daemon"; Flags: runhidden nowait
+Filename: "{app}\UltimatePornBlocker.exe"; Parameters: "--daemon"; Flags: runhidden nowait
 ; 3. Offer to open the blocker console
-Filename: "{app}\WebsiteBlocker.exe"; Description: "Launch Website Blocker Console"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\UltimatePornBlocker.exe"; Description: "Launch Ultimate Porn Blocker Console"; Flags: nowait postinstall skipifsilent
 
 [Code]
 var
@@ -51,7 +51,8 @@ begin
     '2. In the next step, you will be required to set a MASTER PASSWORD.' + #13#10#13#10 +
     '3. IMPORTANT WARNING:' + #13#10 +
     '   The blocker console and settings will NEVER OPEN unless you provide this exact password.' + #13#10 +
-    '   Protection cannot be paused, stopped, or disabled without this password.' + #13#10#13#10 +
+    '   Protection cannot be paused, stopped, or disabled without this password.' + #13#10 +
+    '   THERE IS NO "FORGOT PASSWORD" OR BACKDOOR RESET.' + #13#10#13#10 +
     '4. An Emergency Recovery Key will be generated in your installation folder.' + #13#10 +
     '   Please store both your password and recovery key in a safe place.' + #13#10#13#10 +
     'Click "Next" ONLY if you understand and accept this responsibility.'
